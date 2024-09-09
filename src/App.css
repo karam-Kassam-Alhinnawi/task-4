@@ -1,0 +1,90 @@
+:root{
+  --blue-color: #3fbbc0;
+}
+
+body{
+  font-family: 'Roboto';
+}
+
+.mainColor{
+  background-color: var(--blue-color);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  background-color: rgb(169, 168, 168) !important;
+  padding: 24px;
+  color: #2929fa;
+  transition: .5s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+  background-color: var(--blue-color) !important;
+}
+
+.active{
+  background-color: var(--blue-color) !important;
+}
+
+.cta{
+  background-color: var(--blue-color);
+}
+
+/* Start About Section  */
+.about-dividor{
+   color: #3fbbc0 !important;
+}
+
+.about-img{
+  position: relative !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-icon{
+  position: absolute !important;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 24px;
+  border-radius: 50%;
+}
+
+/* End About Section  */
+
+.grid-services{
+  display: grid !important;
+  grid-template-columns: repeat(3, auto) !important;
+  grid-template-rows: repeat(2, auto) !important;
+}
+
+@media (max-width: 768px) {
+  .responsive-logo {
+    width: 100px !important;
+  }
+  .responsive-button{
+    margin-left: 0px !important;
+  }
+  .responsive-top-section{
+    padding-inline: 12px !important;
+    font-size: 8px !important;
+  }
+  .carousel-heading{
+    font-size: 16px !important;
+  }
+  .col-div{
+    margin-top: 32px !important;
+  }
+  .cta-heading{
+    font-size: 22px !important;
+  }
+  .about, .features, .appointment, .servicesContainer, .doctors{
+    flex-direction: column !important;
+  }
+  .features img{
+    width: 100% !important;
+  }
+  textarea, .accordian{
+    width: 100% !important;
+  }
+}
